@@ -1,0 +1,69 @@
+.info {
+    width: 100%;
+    background-image: linear-gradient(to bottom, #CA4500, #A81E00);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0;
+}
+
+.dove-e-tel {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+  .dove-e-tel h2 {
+    font-size: 5vw;
+    color: white;
+    letter-spacing: 8px;
+    text-shadow: -1px -1px 2px #000, /* Top-left shadow */
+    1px -1px 2px #000, /* Top-right shadow */
+    -1px 1px 2px #000, /* Bottom-left shadow */
+    1px 1px 2px #000; /* Bottom-right shadow */
+    margin:0;
+  }
+
+  .dove-e-tel h3 {
+      color: black;
+      margin: 20px 0 0 0;
+      font-family: Calibri;
+      font-size: 1.5vw;
+  }
+
+  .dove-e-tel h4{
+      font-family: Calibri;
+      font-weight:500;
+      font-size: 1.2vw;
+      margin: 0 0 20px 0;
+  }
+
+  .dove-e-tel h5 {
+    color: black;
+    margin: 0;
+    font-family: Calibri;
+    font-size: 1.5vw;
+    letter-spacing: 10px;
+  }
+
+  .dove-e-tel p{
+      color: black;
+      font-family: Calibri;
+      margin: 0;
+  }
+
+  .separatore-info {
+      width: 65%;
+      height: 1px;
+      background-color: black;
+      margin: 5px 0 5px 0;
+  }
+
+.info iframe{
+    margin: 0;
+    width: 60%;
+}
