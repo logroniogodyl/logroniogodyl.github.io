@@ -1,0 +1,342 @@
+/*** I NOSTRI PIATTI ***/
+#inostripiatti {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.inostripiatti {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stylingImg {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  z-index: 4; /* Appears on top */
+}
+
+.riquadroPiatto {
+  width: 230px;
+  height: 230px;
+  background-color: transparent;
+  border: 2px solid white;
+  transform: rotate(10deg);
+  transition: transform 0.3s ease-out;
+}
+
+  .riquadroPiatto:hover {
+    transform: rotate(190deg);
+    cursor: pointer;
+  }
+
+.immaginePiatti {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  z-index: 3; /* Appears in between */
+}
+
+  .immaginePiatti img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    transform: rotate(10deg);
+  }
+
+.backgroundPiatti {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  z-index: 2; /* Appears below */
+}
+
+.backgroundBiancoPiatti {
+  height: 260px;
+  width: 260px;
+  background-color: black;
+  transform: rotate(10deg);
+}
+
+.fondaleBackgroundPiatti {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+}
+
+.fondalePiattiBg {
+  height: 100px;
+  width: 300px;
+  background-image: linear-gradient(to right, #A82E00, #CA4500);
+}
+
+.contenitore-modale {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 10;
+}
+
+.contenuto-modale {
+  position: relative;
+  width: 70%;
+  height: 600px;
+  background-color: black;
+  padding: 10px;
+  z-index: 11;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.piatto {
+  width: 49%;
+  height: 90%;
+  padding: 4% 10px 4% 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .piatto h2 {
+    color: white;
+    margin: 0 0 5px 0;
+    font-size: 2.5vw;
+    font-family: Calibri;
+    text-align: center;
+    text-shadow: 0px 0px 10px #CA4500;
+    letter-spacing: 2px;
+  }
+
+.nome-ristorante-menu {
+  font-size: 4vw;
+  text-align: center;
+  margin: 3vh 0 0 0;
+  background: linear-gradient(to bottom, #A82E00, #FF6347);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'Baskerville Old Face';
+  letter-spacing: 8px;
+}
+
+.piatto h4 {
+  color: #CA4500;
+  margin: 0;
+  font-family: Calibri;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+.piatto p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  font-style: italic;
+  font-size: smaller;
+}
+
+.contenitore-immagine {
+  margin: 2vh 0 1vh 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+  .contenitore-immagine img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.divisore-menu {
+  background: radial-gradient(circle, white, black);
+  height: 100%;
+  width: 2px;
+}
+
+.menu {
+  width: 49%;
+  height: 90%;
+  padding: 4% 10px 4% 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-colonna-sx {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px 0 0;
+}
+
+  .menu-colonna-sx h2 {
+    color: white;
+    margin: 0 0 2vh 0;
+    font-size: 3vw;
+    font-family: Calibri;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .menu-colonna-sx h4 {
+    color: #CA4500;
+    margin: 0;
+    font-family: Calibri;
+    text-align: center;
+    font-size: 1.3vw;
+  }
+
+.titolo-menu {
+  background: radial-gradient(circle, #CA4500, #A82E00);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 80%;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .titolo-menu h5 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    text-decoration: double;
+    font-family: Calibri;
+    font-size: 1.2vw;
+    letter-spacing: 8px;
+  }
+
+.contenuto-titolo {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenuto-titolo-riga {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 5px 2px 5px;
+}
+
+.riga-prodotto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+  .riga-prodotto p {
+    color: #FFB84D;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7vw;
+  }
+
+.prodotto-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .prodotto-header h3 {
+    color: white;
+    margin: 0;
+    font-family: Calibri;
+    font-size: 1.1vw;
+  }
+
+.menu-colonna-dx {
+    display:flex;
+    flex-direction:column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    padding: 0 0 0 5px;
+}
+
+.voci-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenuto-modale button {
+  color: darkgrey;
+  background-color: transparent;
+  height: 45px;
+  width: 45px;
+  border-width: 0px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.immagine-angolo {
+  position: absolute;
+  bottom: 7vh;
+  right: 15px;
+  overflow: hidden;
+}
+
+  .immagine-angolo img {
+    max-width: 220px;
+    max-height: 250px;
+    object-fit:fill;
+  }

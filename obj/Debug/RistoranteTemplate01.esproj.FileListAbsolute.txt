@@ -1,0 +1,2 @@
+D:\PROGRAMMING\MakeMoney\Templates\RistoranteTemplate01\RistoranteTemplate01\obj\Debug\RistoranteTemplate01.esproj.SuggestedBindingRedirects.cache
+D:\PROGRAMMING\MakeMoney\Templates\RistoranteTemplate01\RistoranteTemplate01\obj\Debug\RistoranteTemplate01.esproj.CoreCompileInputs.cache
